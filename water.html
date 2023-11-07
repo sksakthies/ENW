@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="with=device-width, initial-scale=1.0">
+        <title>
+            water and electricity management 
+        </title>
+        <link rel="stylesheet" href="water.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,700;1,200&display=swap" rel="stylesheet"> 
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+    </head>
+    <body>
+        <section class="header">
+            <nav>
+                <a href="water.html"><img src="company.jpg.jpg"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hidemenu()"></i>
+                    <ul>
+                        <li><a href="homepage.html">HOME</a></li>
+                        <li><a href="aboutpage.html">ABOUT</a></li>
+                        <li><a href="waterpage.html">WATER CONSUMED</a></li>
+                        <li><a href="electricitypage.html">ELECTRICITY CONSUMED</a></li>
+                        <li><a href="contactpage.html">CONTACT</a></li>
+                        <li><a href="loginpaaa.html">Login</a></li>
+
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showmenu()"></i>
+            </nav>
+<div class="text-box">
+    <h1>WATER AND ELECTRICITY TRACKING WEBSITE </h1>
+    <p>
+        THIS WEBSITE IS MADE FOR THE TRACKING OF THE AMOUNT OF WATER AND ELECTRICITY CONSUMED BY THE HOUSEHOLDS 
+    </p>
+    <a href="visit.html" class="hero-btn">Visit us to know more</a>
+</div>            
+        </section>
+<!---course--->
+<section class="about">
+    <h1>Service We Offer</h1>
+    <p>Monitoring the amount consumed </p>
+    <p>Monitoring the amount of water consumed</p>
+
+<div class="row">
+    <div class="about-col">
+        <h3>Water Consumption Monitoring</h3>
+        <p>This website will display the amount of water consumed in the households and the reading from the water meter is collected from the house.The payment for the consumption of the water can be payed in online through this application </p>
+    </div>
+    <div class="about-col">
+        <h3>Electricity Consumption Monitoring</h3>
+        <p>This website will display the amount of electricity consumed in the households and the reading from the electric meter is collected from the house.The payment for the consumption of the electricity can be payed in online through this application </p>
+    </div>
+
+</div>
+</section>
+<!----------------waterconsumed---------------->
+<section class="water">
+    <h1>Our Product</h1>
+    <p>The Water meter and Electricity meter</p> 
+    <div class="row">
+        <div class="water-col">
+            <img src="https://5.imimg.com/data5/TD/UH/MY-24110117/brass-water-meter.png">
+            <div class="layer">
+                <p>Watermeter</p>
+            </div>
+        </div>
+        <div class="water-col">
+            <img src="https://res.cloudinary.com/doqlszv19/image/upload/v1674648049/PE_5121_P_dd54d20eeb.png">
+            <div class="layer">
+                <p>Electricity meter</p>
+            </div>
+    </div>
+</section>
+<!-----------services-------->
+<section class="water">
+    <h1>Water Meter</h1>
+    <p>The Water meter measure the amount of water used and update it in the cloud </p>
+
+    <div class="row">
+        <div class="water-col">
+            <img src="">
+        </div>
+    </div>
+</section>
+    <section class="water">
+        <h1>Electricity Meter</h1>
+        <p>The Electricity meter measure the amount of Electricity used and update it in the cloud </p>
+    
+        <div class="row">
+            <div class="water-col">
+                <img src="">
+            </div>
+        </div>
+    </section>
+</section>
+
+  
+
+
+
+
+
+<!-----javascript for togglemenu------------->
+<script>
+    var navLinks=document.getElementById("navLinks");
+    function showmenu(){
+        navLinks.style.right="0";
+    }
+    function hidemenu(){
+        navLinks.style.right="-200px";
+    }
+
+
+</script>
+
+    <div class="social-icons">
+        <a href="https://www.instagram.com" target="_blank">instagram<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwXpMW5IZ3E8exuI1JjVWs-BtcPlul2mUvy4RCeTI&s" alt="Instagram"></a>
+        <a href="https://www.facebook.com" target="_blank">facebook<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2rr9HR-wSllBQAi5oWGbjP5XdWnJhJnRLwzqaNYC9&s" alt="Facebook"></a>
+        <a href="https://api.whatsapp.com/send?phone=YOUR_PHONE_NUMBER" target="_blank">whatsapp<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6Qz-fgZWrz-UjgfxRpkYBI4FYQvEKU32pMmAAM5w&s" alt="WhatsApp"></a>
+    </div>
+
+<style>
+    .social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+}
+
+.social-icons a {
+    margin: 10px;
+    text-decoration: none;
+    display: inline-block;
+    background: transparent;
+    transition: 0.5s;
+}
+
+.social-icons img {
+    width: 40px; /* Adjust the size as needed */
+    height: 40px; /* Adjust the size as needed */
+}
+body {
+    background: transparent; /* Set the background to transparent */
+}
+.background-div {
+    background: transparent; /* Set the background to transparent */
+}
+body {
+    background-image: none; /* Remove background image */
+}
+
+
+
+</style>
+<script>
+    document.querySelectorAll('.social-icons a').forEach(link => {
+    link.addEventListener('click', function() {
+        // Add your tracking code here
+    });
+});
+
+</script>
+    </body>
+</html>

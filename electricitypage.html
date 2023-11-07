@@ -1,0 +1,112 @@
+<div class="container">
+    <h1>Current Usage Monitor</h1>
+    <p> Current Usage: <span id="water-usage">0 watts</span></p>
+  </div>
+  <script src="script.js"></script>
+
+<script>
+  // Simulate water usage data (you'd replace this with real data)
+  let waterUsage = 0;
+  
+  function updateWaterUsage() {
+    // Update the water usage value
+    document.getElementById("water-usage").textContent = waterUsage + "watts";
+  
+    // Simulate a data update (e.g., from sensors or a database)
+    waterUsage += 0.1; // Increment water usage by 0.1 liters (replace with actual data)
+  
+    // Call this function periodically to update the water usage
+    setTimeout(updateWaterUsage, 1000); // Update every 1 second (adjust as needed)
+  }
+  
+  // Start updating the water usage data
+  updateWaterUsage();
+  </script>
+
+  <style>
+    body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+  }
+  
+  .container {
+    text-align: center;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 45px;
+    padding: 50px;
+    margin: 20px auto;
+    width: 300px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+  }
+  
+  h1 {
+    font-size: 24px;
+    color: #333;
+  }
+  
+  p {
+    font-size: 18px;
+  }
+  
+  span {
+    font-weight: bold;
+    color: #007acc;
+  }
+  </style>
+  
+  <div class="container">
+    <h1>Current Consumption Tracker</h1>
+    <label for="waterAmount">Enter the amount of Current consumed (in milliliters):</label>
+    <input type="number" id="waterAmount" placeholder="Enter the amount" />
+    <button id="addWater">Add</button>
+    <p id="waterDisplay">Total Current consumed: <span id="totalWater">0</span> ml</p>
+</div>
+<script src="script.js"></script>
+<style>
+.container {
+text-align: center;
+margin: 20px;
+}
+
+input {
+width: 150px;
+padding: 5px;
+}
+
+button {
+padding: 5px 10px;
+background-color: #007bff;
+color: #fff;
+border: none;
+cursor: pointer;
+}
+
+button:hover {
+background-color: #0056b3;
+}
+
+#waterDisplay {
+margin-top: 20px;
+}
+</style>
+<script>
+// JavaScript code to handle water consumption tracking
+const addWaterButton = document.getElementById("addWater");
+const waterAmountInput = document.getElementById("waterAmount");
+const totalWaterDisplay = document.getElementById("totalWater");
+
+
+addWaterButton.addEventListener("click", () => {
+const waterAmount = parseInt(waterAmountInput.value, 10);
+waterUsage += 0.1;
+if (!isNaN(waterAmount)) {
+    totalWaterConsumed += waterUsage;
+    totalWaterDisplay.textContent = waterUsage + " l";
+    waterAmountInput.value = "";
+} else {
+    alert("Please enter a valid amount of water (in milliliters).");
+}
+});
+</script>
